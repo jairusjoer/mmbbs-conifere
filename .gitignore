@@ -1,0 +1,9 @@
+# Modules
+node_modules
+
+# Eleventy
+build
+
+# Lock files
+package-lock.json
+yarn.lock

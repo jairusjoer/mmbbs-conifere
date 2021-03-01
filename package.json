@@ -1,0 +1,28 @@
+{
+  "name": "conifere",
+  "version": "1.0.0",
+  "description": "A small website for a company.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "eleventy --serve --port=3000",
+    "watch": "eleventy --watch",
+    "build": "eleventy",
+    "debug": "DEBUG=* eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.1"
+  },
+  "author": "Jairus Joer",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jairusjoer/mmbbs-conifere.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jairusjoer/mmbbs-conifere/issues"
+  },
+  "homepage": "https://github.com/jairusjoer/mmbbs-conifere#readme",
+  "devDependencies": {
+    "eslint": "^7.21.0"
+  }
+}
