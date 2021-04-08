@@ -4,7 +4,7 @@
   "description": "A small website for a company.",
   "main": "index.html",
   "scripts": {
-    "dev": "eleventy --serve --port=3000",
+    "dev": "eleventy --serve",
     "watch": "eleventy --watch",
     "build": "eleventy",
     "debug": "DEBUG=* eleventy"

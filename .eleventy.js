@@ -10,7 +10,7 @@ module.exports = function (eleventyConfig) {
       output: "build",
       data: "json",
       includes: "components",
-      layouts: "pages",
+      layouts: "views",
     },
   };
 };

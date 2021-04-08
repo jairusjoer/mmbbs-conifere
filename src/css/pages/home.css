@@ -1,0 +1,50 @@
+@import '../global.css';
+@import '../components/navigation.css';
+@import '../components/footer.css';
+
+.home {
+  display: grid;
+  grid-template-areas: 'stage stage stage stage' 'about workshop showroom partners';
+  grid-template-rows: auto max-content;
+  min-height: calc(100vh - 1.5rem);
+  grid-gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.home-stage {
+  margin: 0 -1.5rem;
+  grid-area: stage;
+  color: white;
+  background-image: url('./img/home/home-stage.jpg');
+  background-size: cover;
+}
+
+.home-stage-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4.5rem 3rem;
+  height: 100%;
+  width: max-content;
+  background: linear-gradient(90deg, #00000055, #00000000);
+}
+
+.home-item {
+  color: #fff;
+  background-color: lightgray;
+  padding-top: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.home-item:hover {
+  opacity: .875;
+}
+
+.home-item > h2 {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  right: 1.5rem;
+  transform: translateY(-50%);
+}

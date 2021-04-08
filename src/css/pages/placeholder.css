@@ -1,0 +1,16 @@
+@import '../global.css';
+@import '../components/navigation.css';
+@import '../components/footer.css';
+
+.placeholder {
+  margin: 6rem 1.5rem 0;
+  padding: 1.5rem;
+  background: linear-gradient(white, transparent);
+  display: grid;
+  grid-gap: 1rem;
+  height: calc(100vh - 7.5rem - 11rem);
+}
+
+.placeholder-container p {
+  font-size: 1rem;
+}

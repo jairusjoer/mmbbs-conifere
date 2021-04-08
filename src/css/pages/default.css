@@ -1,0 +1,67 @@
+@import '../global.css';
+@import '../components/navigation.css';
+@import '../components/footer.css';
+
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h2 + h3,
+p + p,
+li + li {
+  margin-top: 1rem;
+}
+
+p + h2,
+p + h3,
+p + h4 {
+  margin-top: 3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.default {
+  display: grid;
+  grid-template-rows: 50vh max-content;
+  grid-gap: 1.5rem;
+  padding: 0 1.5rem;
+}
+
+.default-stage {
+  grid-column: 1/-1;
+  margin: 0 -1.5rem;
+  color: white;
+  background-image: url('/img/showroom/showroom-stage.jpg');
+  background-size: cover;
+}
+
+.default-stage-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4.5rem 3rem;
+  height: 100%;
+  width: max-content;
+  background: linear-gradient(90deg, #00000055, #00000000);
+}
+
+.default-content {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  grid-template-columns: 1fr [content] minmax(272px, 924px) 1fr;
+}
+
+.default-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.default-content-item {
+  grid-column: content;
+  background-color: #fff;
+  padding: 1.5rem;
+}

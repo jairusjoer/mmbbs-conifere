@@ -1,0 +1,22 @@
+---
+title: Conifere
+filename: main
+---
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    {% include meta.html %}
+    <title>{{title}}</title>
+    {% if filename == 'werkstatt' %}
+    <!-- GlideJS – https://glidejs.com/ -->
+    <script src="/js/libraries/glide.min.js"></script>
+    {% endif %}
+    <script defer src="/js/main.js"></script>
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link rel="stylesheet" href="/css/pages/{{filename}}.css" />
+  </head>
+  <body>
+    {% include navigation.html %} {{ content }} {% include footer.html %}
+  </body>
+</html>

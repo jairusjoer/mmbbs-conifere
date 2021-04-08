@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/BebasNeue-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
 * {
   border: 0;
   box-sizing: border-box;
@@ -10,23 +27,16 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #f0f0f0;
+  color: #000;
 }
 
 body {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: 'Overpass', sans-serif;
   font-weight: 300;
-  display: grid;
-  grid-template-columns: 1fr [content] minmax(272px, 960px) 1fr;
-  grid-gap: 9rem 1.5rem;
-  padding: 1.5rem 0;
-}
-
-body > * {
-  grid-column: content;
+  overscroll-behavior: none;
 }
 
 h1,
@@ -35,13 +45,32 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.5;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.166rem;
+  line-height: 1;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
 }
 
 p {
-  font-size: 18px;
-  line-height: 24px;
-  color: #909090;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 300;
 }
 
 a {
@@ -61,8 +90,6 @@ span {
 
 img {
   position: relative;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   image-rendering: optimizeQuality;
   user-select: none;

@@ -1,0 +1,57 @@
+---
+title: Werkstatt – Conifere
+description: Begeben Sie sich auf die Fotostrecke und gewinnen Sie einen Eindruck über unsere Arbeitsweise.
+layout: main
+filename: werkstatt
+gallery:
+  - url: werkstatt-front
+    alt: Eingangsbereich der Werkstatt
+  - url: werkstatt-detail
+    alt: Nahaufnahme beim zuschneiden von Holz
+  - url: werkstatt-verarbeitung
+    alt: Verarbeitungshalle innerhalb der Werkstatt
+  - url: werkstatt-lackierung
+    alt: Lackierung eines Holzelements innehalb eine Kammer
+  - url: werkstatt-transport
+    alt: Transport eines Wekstücks innerhalb der Werkstatt
+---
+
+<main class="werkstatt">
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <div class="glide__slides">
+        <div class="glide__slide">
+          <div class="werkstatt-teaser">
+            <div class="werkstatt-teaser-content">
+              <h1>Ohne Worte.</h1>
+              <p>
+                Begeben Sie sich einfach auf die Fotostrecke und gewinnen Sie einen ersten
+                Eindruck über unsere Arbeitsweise.
+              </p>
+            </div>
+          </div>
+        </div>
+        {% for image in gallery %}
+        <div class="glide__slide">
+          <img
+            class="werkstatt-bild"
+            src="/img/werkstatt/{{image.url}}.jpg"
+            alt="{{image.alt}}"
+          />
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="werkstatt-buttons" data-glide-el="controls[nav]">
+      <button class="werkstatt-button-left" data-glide-dir="<">
+        <img src="/img/chevron-left.svg" alt="Button: Zurück" />
+      </button>
+      {% for i in (1..5) %}
+      <button class="glide__bullet" data-glide-dir="={{i}}"><span></span></button>
+      {% endfor %}
+      <button class="werkstatt-button-right" data-glide-dir=">">
+        <img src="/img/chevron-right.svg" alt="Button: Weiter" />
+      </button>
+    </div>
+  </div>
+</main>

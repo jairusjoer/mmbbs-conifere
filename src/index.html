@@ -1,10 +1,37 @@
-<!DOCTYPE html>
-<html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
-</html>
+---
+title: Handwerkliche Perfektion – Conifere
+description: Individuelle Gesamtlösungen für Heim und Haus aus Freiburg bei Breisgau.
+layout: main
+filename: home
+items:
+  - title: Über uns
+    slug: uber-uns
+    url: /uberuns/
+  - title: Werkstatt
+    slug: werkstatt
+    url: /werkstatt/
+  - title: Showroom
+    slug: showroom
+    url: /showroom/
+  - title: Partner
+    slug: partner
+    url: /partner/
+---
+
+<main class="home">
+  <header class="home-stage">
+    <div class="home-stage-content">
+      <h1>Handwerkliche Perfektion.</h1>
+      <p>Individuelle Gesamtlösungen für Heim und Haus<br />aus Freiburg bei Breisgau.</p>
+    </div>
+  </header>
+  {% for item in items %}
+  <a
+    class="home-item"
+    href="{{item.url}}"
+    style="background-image: url('/img/home/home-{{item.slug}}.jpg')"
+  >
+    <h2>{{item.title}}</h2>
+  </a>
+  {% endfor %}
+</main>

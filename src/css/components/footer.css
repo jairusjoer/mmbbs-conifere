@@ -1,0 +1,42 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  margin: 1.5rem;
+  background-color: #fff;
+}
+
+.footer-item {
+  padding: 1.5rem;
+  color: #707070;
+}
+
+.footer-item h3 + span,
+.footer-item h3 + a {
+  margin-top: 0.5rem;
+}
+
+.footer-item h3 {
+  color: #000;
+}
+
+.footer-item a {
+  text-decoration: underline;
+  color: #000;
+}
+
+.footer-item-state.open {
+  color: green;
+}
+
+.footer-item-state.close {
+  color: red;
+}
+
+.footer-item a {
+  display: block;
+}
+
+.footer-item-menu a:nth-child(n + 2) {
+  margin-left: 1.5rem;
+}
