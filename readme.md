@@ -3,6 +3,7 @@
 > Jairus Joer, 2021.04.07
 
 ## Verwendete Bibliotheken
+
 - [Eleventy 0.11.1](https://www.11ty.dev/)
 - [ESLint 7.21.0](https://eslint.org/)
 - [Glide.js 3.4.1](https://glidejs.com/)

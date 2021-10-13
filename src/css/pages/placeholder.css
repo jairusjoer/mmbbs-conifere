@@ -7,7 +7,7 @@
   padding: 1.5rem;
   background: linear-gradient(white, transparent);
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
   height: calc(100vh - 7.5rem - 11rem);
 }
 
